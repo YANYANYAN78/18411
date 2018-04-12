@@ -65,3 +65,15 @@ print ('total is:',i)
 
 
 
+
+#去除重复  
+list_dad=['1','2','3','4']
+list_sun=[]
+for x in list_dad:
+    for y in list_dad:
+        for z in list_dad:
+            if len(set(x+y+z))==3:#去除重复元素
+                list_sun+=[int(x+y+z)]  #注意这种形式的列表增加元素和append（i）的不同
+                              
+print ('tatal is:',len(list_sun))
+print(list_sun)
