@@ -17,8 +17,8 @@ for x in range(1,5):
 
 #完善一下总数计数问题
 d=[]
-for x in range(1,5):
-    for y in range(1,5):
+for x in range(1,5): #一层层加上约束条件
+    for y in range(1,5):
         for z in range(1,5):
             if (x!=y) and (y!=z) and (z!=x):
                 d.append([x,y,z])
@@ -51,8 +51,17 @@ print (list)
 
 
 
+#逐个技术+=1
 
-
+num=[1,2,3,4]
+i=0
+for x in num:
+    for y in num:
+        for z in num:
+            if x!=y and y!=z and z!=x:
+                i+=1
+                print (x,y,z) #注意加逗号
+print ('total is:',i)
 
 
 
