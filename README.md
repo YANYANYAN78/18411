@@ -8,8 +8,19 @@
 # -*- coding:utf-8  -*-
 
 
-for x in rang(1,5):
-    for y in rang(1,5):
-        for z in rang(1,5):
+for x in range(1,5):
+    for y in range(1,5):
+        for z in range(1,5):
             if (x!=y) and (y!=z) and (z!=x):
                 print x,y,z
+
+
+#完善一下总数计数问题
+d=[]
+for x in range(1,5):
+    for y in range(1,5):
+        for z in range(1,5):
+            if (x!=y) and (y!=z) and (z!=x):
+                d.append([x,y,z])
+print("一共是%d个"%len(d))
+print(d)
