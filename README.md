@@ -77,3 +77,15 @@ for x in list_dad:
                               
 print ('tatal is:',len(list_sun))
 print(list_sun)
+
+
+#类似概率算法-数学
+list = [1,2,3,4]
+for i in list:
+    list1 = list.copy()
+    list1.remove(i)
+    for j in list1:
+        list2 = list1.copy()
+        list2.remove(j)
+        for k in list2:
+            print(i, j, k)
